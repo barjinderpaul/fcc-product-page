@@ -271,6 +271,7 @@ p{
 
 @media screen and (max-width:1080px) {
  
+
    .services-content {
     /* width: 80%; */
     /* background-color: black; */
@@ -297,6 +298,32 @@ p{
   }
   .social-media {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-content: flex-start;
+    /* padding-left: 0; */
+    margin-left: 0;
+
+  }
+ 
+  .nav ul{
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .nav a {
+    padding: 10px 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    display: block;
+    border-bottom:1px solid #E1B800 ;
+    /* float: left; */
+    /* position: relative; */
   }
 }
 

@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-img">
+    <header class="bg-img">
         <div class="container">
             <h1 for="header" id="header">CoderGang</h1>
             <div class="nav">
@@ -20,42 +25,19 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Services start -->
-    <div class="services" id="service">
-        <div class="services-header">
-            <br>
-            <h3>What services we provide</h3>
-            <br>
-        </div>
+    <main id="main">
+        <!-- Services start -->
+        <div class="services" id="service">
+            <div class="services-header">
+                <br>
+                <h3>What services we provide</h3>
+                <br>
+            </div>
 
-        <!-- Service-1 -->
-        <div class="services-content" id="service1">
-            <div class="services-content-left" >
-                <img src="images/coding.png" alt="">
-            </div>
-            
-            <div class="services-content-right">
-                <h4>Development Courses</h4>
-                <p>We provide all sorts of development courses, be it with Java, Javascript, Python and even Android. We also have language specific courses. </p>
-            </div>
-        </div>
-        
-        <!-- service-2 -->
-        <div class="services-content-inverse" id="service2">
-            <div class="services-content-left" >
-                <img src="images/coding.png" alt="">
-            </div>
-            
-            <div class="services-content-right">
-                <h4>Language specific</h4>
-                <p>We provide all sorts of development courses, be it with Java, Javascript, Python and even Android. We also have language specific courses. </p>
-            </div>
-        </div>
-
-        <!-- service-3 -->
-        <div class="services-content" id="service3">
+            <!-- Service-1 -->
+            <div class="services-content" id="service1">
                 <div class="services-content-left" >
                     <img src="images/coding.png" alt="">
                 </div>
@@ -64,195 +46,221 @@
                     <h4>Development Courses</h4>
                     <p>We provide all sorts of development courses, be it with Java, Javascript, Python and even Android. We also have language specific courses. </p>
                 </div>
+            </div>
+            
+            <!-- service-2 -->
+            <div class="services-content-inverse" id="service2">
+                <div class="services-content-left" >
+                    <img src="images/coding.png" alt="">
+                </div>
+                
+                <div class="services-content-right">
+                    <h4>Language specific</h4>
+                    <p>We provide all sorts of development courses, be it with Java, Javascript, Python and even Android. We also have language specific courses. </p>
+                </div>
+            </div>
+
+            <!-- service-3 -->
+            <div class="services-content" id="service3">
+                    <div class="services-content-left" >
+                        <img src="images/coding.png" alt="">
+                    </div>
+                    
+                    <div class="services-content-right">
+                        <h4>Development Courses</h4>
+                        <p>We provide all sorts of development courses, be it with Java, Javascript, Python and even Android. We also have language specific courses. </p>
+                    </div>
+            </div>
         </div>
-    </div>
-    <!-- Courses start -->
-    <div class="courses" id="course">
+        <!-- Courses start -->
+        <div class="courses" id="course">
 
-        <div class="services-header">
-            <br>
-            <h3>Courses we offer</h3>
-            <br>
-        </div>
-        
+            <div class="services-header">
+                <br>
+                <h3>Courses we offer</h3>
+                <br>
+            </div>
+            
 
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'full-stack')" id="defaultOpen">Full Stack</button>
-            <button class="tablinks" onclick="openCity(event, 'java')">Java</button>
-            <button class="tablinks" onclick="openCity(event, 'cpp')">C++</button>
-            <button class="tablinks" onclick="openCity(event, 'js')">Javascript</button>
-            <button class="tablinks" onclick="openCity(event, 'python')">Python</button>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'full-stack')" id="defaultOpen">Full Stack</button>
+                <button class="tablinks" onclick="openCity(event, 'java')">Java</button>
+                <button class="tablinks" onclick="openCity(event, 'cpp')">C++</button>
+                <button class="tablinks" onclick="openCity(event, 'js')">Javascript</button>
+                <button class="tablinks" onclick="openCity(event, 'python')">Python</button>
 
-        </div>
+            </div>
 
-        <div id="full-stack" class="tabcontent">
-                <h3>Full stack development</h3>
+            <div id="full-stack" class="tabcontent">
+                    <h3>Full stack development</h3>
+
+                    <div class="course-content">
+                    
+                        <div class="course" id="course1">
+                            <img src="images/coding.png" alt="full stack with Java">
+                            <h4>Full stack development with Java</h4>
+                            <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                            <button type="submit" class="course-buy-button">
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="course" id="course2">
+                            <img src="images/coding.png" alt="full stack with Javascript">
+                            <h4>Full stack development with Javascript</h4>
+                            <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                            <button type="submit" class="course-buy-button">
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="course" id="course3">
+                            <img src="images/coding.png" alt="full stack with Python">
+                            <h4>Full stack development with Python</h4>
+                            <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                            <button type="submit" class="course-buy-button">
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="course" id="course4">
+                            <img src="images/coding.png" alt="full stack in Android">
+                            <h4>Full stack development in Android</h4>
+                            <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                            <button type="submit" class="course-buy-button">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+            </div>
+                
+            <div id="java" class="tabcontent">
+                <h3>Java Language</h3>
 
                 <div class="course-content">
                 
                     <div class="course" id="course1">
-                        <img src="images/coding.png" alt="full stack with Java">
-                        <h4>Full stack development with Java</h4>
+                        <img src="images/coding.png" alt="Learn core java">
+                        <h4>Core Java</h4>
                         <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
                         <button type="submit" class="course-buy-button">
                             Add to cart
                         </button>
                     </div>
                     <div class="course" id="course2">
-                        <img src="images/coding.png" alt="full stack with Javascript">
-                        <h4>Full stack development with Javascript</h4>
+                        <img src="images/coding.png" alt="Learn advance java">
+                        <h4>Advance java</h4>
                         <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
                         <button type="submit" class="course-buy-button">
                             Add to cart
                         </button>
                     </div>
                     <div class="course" id="course3">
-                        <img src="images/coding.png" alt="full stack with Python">
-                        <h4>Full stack development with Python</h4>
+                        <img src="images/coding.png" alt="Collections in Java">
+                        <h4>Collections in java</h4>
                         <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
                         <button type="submit" class="course-buy-button">
                             Add to cart
                         </button>
                     </div>
-                    <div class="course" id="course4">
-                        <img src="images/coding.png" alt="full stack in Android">
-                        <h4>Full stack development in Android</h4>
-                        <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                        <button type="submit" class="course-buy-button">
-                            Add to cart
-                        </button>
-                    </div>
-                </div>
-        </div>
-            
-        <div id="java" class="tabcontent">
-            <h3>Java Language</h3>
-
-            <div class="course-content">
-            
-                <div class="course" id="course1">
-                    <img src="images/coding.png" alt="Learn core java">
-                    <h4>Core Java</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                <div class="course" id="course2">
-                    <img src="images/coding.png" alt="Learn advance java">
-                    <h4>Advance java</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                <div class="course" id="course3">
-                    <img src="images/coding.png" alt="Collections in Java">
-                    <h4>Collections in java</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
+                    
                 
-            
-            </div>
-        </div>
-            
-        <div id="cpp" class="tabcontent">
-            <h3>C++ Language</h3>
-
-            <div class="course-content">
-            
-                <div class="course" id="course1">
-                    <img src="images/coding.png" alt="basics of c-plus-plus">
-                    <h4>Basics of C++</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                <div class="course" id="course2">
-                    <img src="images/coding.png" alt="data structures in c-plus-plus">
-                    <h4>Data Structures in C++</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                <div class="course" id="course3">
-                    <img src="images/coding.png" alt="STL in c-plus-plus">
-                    <h4>STL in C++</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                
-            
-            </div>  
-        </div>
-
-        <div id="js" class="tabcontent">
-            <h3>Javascript Language</h3>
-
-            <div class="course-content">
-            
-                <div class="course" id="course1">
-                    <img src="images/coding.png" alt="Learn javascript">
-                    <h4>Basics of Javascript</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                <div class="course" id="course2">
-                    <img src="images/coding.png" alt="event loop in javascript">
-                    <h4>Event loop in Javascript</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
-                </div>
-                <div class="course" id="course3">
-                    <img src="images/coding.png" alt="ES6 javascript">
-                    <h4>ES6 Javascript</h4>
-                    <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
-                    <button type="submit" class="course-buy-button">
-                        Add to cart
-                    </button>
                 </div>
             </div>
-
-            
-        </div>
-
-        <div id="python" class="tabcontent">
-                <h3>Python Language</h3>
+                
+            <div id="cpp" class="tabcontent">
+                <h3>C++ Language</h3>
 
                 <div class="course-content">
                 
                     <div class="course" id="course1">
-                        <img src="images/coding.png" alt="basics of python">
-                        <h4>Basics of python</h4>
+                        <img src="images/coding.png" alt="basics of c-plus-plus">
+                        <h4>Basics of C++</h4>
                         <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
                         <button type="submit" class="course-buy-button">
                             Add to cart
                         </button>
                     </div>
                     <div class="course" id="course2">
-                        <img src="images/coding.png" alt="iterators and generators in python">
-                        <h4>Iterators and generators in python</h4>
+                        <img src="images/coding.png" alt="data structures in c-plus-plus">
+                        <h4>Data Structures in C++</h4>
                         <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
                         <button type="submit" class="course-buy-button">
                             Add to cart
                         </button>
                     </div>
+                    <div class="course" id="course3">
+                        <img src="images/coding.png" alt="STL in c-plus-plus">
+                        <h4>STL in C++</h4>
+                        <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                        <button type="submit" class="course-buy-button">
+                            Add to cart
+                        </button>
+                    </div>
+                    
                 
-                </div>
-        </div>
+                </div>  
+            </div>
 
-    </div>
+            <div id="js" class="tabcontent">
+                <h3>Javascript Language</h3>
+
+                <div class="course-content">
+                
+                    <div class="course" id="course1">
+                        <img src="images/coding.png" alt="Learn javascript">
+                        <h4>Basics of Javascript</h4>
+                        <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                        <button type="submit" class="course-buy-button">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="course" id="course2">
+                        <img src="images/coding.png" alt="event loop in javascript">
+                        <h4>Event loop in Javascript</h4>
+                        <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                        <button type="submit" class="course-buy-button">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="course" id="course3">
+                        <img src="images/coding.png" alt="ES6 javascript">
+                        <h4>ES6 Javascript</h4>
+                        <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                        <button type="submit" class="course-buy-button">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div id="python" class="tabcontent">
+                    <h3>Python Language</h3>
+
+                    <div class="course-content">
+                    
+                        <div class="course" id="course1">
+                            <img src="images/coding.png" alt="basics of python">
+                            <h4>Basics of python</h4>
+                            <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                            <button type="submit" class="course-buy-button">
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="course" id="course2">
+                            <img src="images/coding.png" alt="iterators and generators in python">
+                            <h4>Iterators and generators in python</h4>
+                            <p>This course covers all content in full stack with java including Core Java, Spring, Spring boot, hibernate, HTML, CSS, JS.</p>
+                            <button type="submit" class="course-buy-button">
+                                Add to cart
+                            </button>
+                        </div>
+                    
+                    </div>
+            </div>
+
+        </div>
+    </main>
+    
     <br><br><br>
     <footer class="footer-flex">
         <div class="about-us">

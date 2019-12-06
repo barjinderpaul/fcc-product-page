@@ -283,9 +283,6 @@ p{
   /* border: 1px white solid; */
 }
 
-.contact-us h4,p {
-  /* padding: 0.5rem; */
-}
 
 .social-media ul a {
   color: white;
@@ -304,14 +301,6 @@ p{
 
 @media screen and (max-width:1080px) {
  
-
-   .services-content {
-    /* width: 80%; */
-    /* background-color: black; */
-  }
-  .services-content-inverse {
-    /* background-color: black; */
-  }
 
   .course-content .course {
     max-width: 80%;
@@ -362,9 +351,6 @@ p{
 
 @media screen and (max-width: 480px) {
 
-  .services {
-    /* background-color: black; */
-  }
 
   .footer-flex {
     flex-direction: column;
